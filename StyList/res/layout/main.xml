@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@color/text_white"
+    tools:context=".MainActivity" >
+    
+    
+    <RelativeLayout
+        android:id="@+id/data_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+        
+        <RelativeLayout 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="10dp"
+            >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:id="@+id/stylist"
+            android:text="@string/sty_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20sp" />
+        
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+             android:layout_alignParentRight="true"
+            >
+             <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:id="@+id/client"
+            android:text="@string/cli_text"
+           
+            android:textSize="20sp" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

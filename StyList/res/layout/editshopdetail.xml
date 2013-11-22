@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    tools:context=".LoginActivity" >
+    
+ <TextView
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_editshopdetail"
+        android:textColor="@color/text_orange"
+        android:textSize="20sp"
+        android:textStyle="normal" >
+    </TextView>
+    
+   <RelativeLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_shopdetail"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+           
+            android:background="@drawable/button_contact"
+            
+            >
+            
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_edit_save"
+        android:textSize="20sp"
+        android:id="@+id/ph"
+        android:textStyle="bold"
+         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_white"
+        android:layout_centerVertical="true"
+        ></TextView>
+            
+            
+        </RelativeLayout>
+    
+  <RelativeLayout 
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_below="@+id/ph"
+          
+          android:layout_marginTop="10dip" 
+        >
+      
+      <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/one"
+                   android:layout_marginTop="10dp"
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/shopname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Shop name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+      <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/one"
+                   android:id="@+id/two"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/shopaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Shop Address"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+      <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/two"
+                   android:id="@+id/three"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/shopcity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Shop city"
+                        android:maxLength="15"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+       <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/three"
+                   android:id="@+id/four"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/shopstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Shop state"
+                       android:maxLength="15"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+       <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/four"
+                   android:id="@+id/five"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/shopzip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Shop Zip"
+                       android:maxLength="15"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+      
+  </RelativeLayout>
+</RelativeLayout>

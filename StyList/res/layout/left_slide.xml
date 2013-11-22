@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:id="@+id/leftSlideScroolView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/mainLinearSlidingLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/leftSlideScroolView" >
+
+            <RelativeLayout
+                android:id="@+id/data_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/logo" >
+
+                <RelativeLayout
+                    android:id="@+id/wall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/wall_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/userpicsmall" />
+
+                    <TextView
+                        android:id="@+id/leftsidewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/wall_img"
+                        android:ems="8"
+                        android:text="@string/home_wall" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/leftPanelSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wall"
+                    android:background="@drawable/seprater" />
+
+                <RelativeLayout
+                    android:id="@+id/servicelist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wall"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/leftService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/service_img"
+                        android:ems="8"
+                        android:paddingBottom="5dip"
+                        android:text="@string/home_servicelist" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/leftPanelSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/servicelist"
+                    android:background="@drawable/seprater" />
+
+                <RelativeLayout
+                    android:id="@+id/calender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/servicelist"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/leftcanlender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/calender_img"
+                        android:ems="8"
+                        android:paddingBottom="5dip"
+                        android:text="@string/home_calender" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/leftPanelSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calender"
+                    android:background="@drawable/seprater" />
+
+                <RelativeLayout
+                    android:id="@+id/clients"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calender"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/clients_img"
+                        android:ems="8"
+                        android:paddingBottom="5dip"
+                        android:text="@string/home_clent" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/leftPanelSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/clients"
+                    android:background="@drawable/seprater" />
+
+                <RelativeLayout
+                    android:id="@+id/activities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clients"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/activities_img"
+                        android:ems="8"
+                        android:paddingBottom="5dip"
+                        android:text="@string/home_activities" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/leftPanelSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activities"
+                    android:background="@drawable/seprater" />
+
+                <RelativeLayout
+                    android:id="@+id/cashflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activities"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/cashflow_img"
+                        android:ems="8"
+                        android:paddingBottom="5dip"
+                        android:text="@string/home_cashflow" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

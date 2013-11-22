@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="2dip" >
+
+    <RelativeLayout
+        android:id="@+id/match_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/match_tex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="5dip"
+            android:text="rfer"
+            android:textColor="@color/black_text"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/serviceListWaliknIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/match_tex2"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/servicelinearName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/serviceListWaliknIcon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/match_tex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text="frfrfrf"
+                android:textColor="@color/black_text"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/serviceListClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:2:3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/serviceListHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/servicelinearName"
+            android:text="hide" />
+
+        <ImageView
+            android:id="@+id/serviceListRightPanelEdit"
+            android:layout_toRightOf="@id/serviceListHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/menu" />
+    </RelativeLayout>
+
+</RelativeLayout>

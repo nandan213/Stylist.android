@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    tools:context=".CalendarActivity$NotesCalendarAdapter" >
+    
+    <LinearLayout
+        android:id="@+id/sss"
+    android:layout_width="61dp"
+    android:layout_height="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#d9d9dc"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+    <RelativeLayout 
+        
+       android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:id="@+id/rl_date"
+        android:layout_below="@+id/sss"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white"
+        >
+    
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/todays_date_marker_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date_textview"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"/>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

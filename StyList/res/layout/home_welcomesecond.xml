@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:background="@color/text_white"
+    tools:context=".LoginActivity" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_wel"
+        android:textSize="20sp"
+        android:id="@+id/ph"
+        android:textStyle="normal"
+         android:layout_centerHorizontal="true"
+       
+        android:textColor="@color/black_text"
+        
+        ></TextView>
+    
+   
+    
+     <RelativeLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_next"
+              
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            
+            android:layout_marginTop="10dp"
+            >
+         
+         <Button 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Shop"
+        
+        android:id="@+id/addashop"
+        android:visibility="visible"
+         android:background="@drawable/tab"
+       android:textSize="14sp"
+        android:textColor="@color/black_text"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+             />
+         
+          <Button 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab"
+        android:text="Skip"
+        android:textColor="@color/black_text"
+       
+        android:layout_alignParentRight="true"
+        android:id="@+id/skip"
+        
+       android:textSize="14sp"
+        android:layout_centerVertical="true"
+             />
+         
+         
+     </RelativeLayout>
+    
+     <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+       android:layout_below="@+id/ph"
+       android:layout_above="@+id/rl_next"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:overScrollMode="never" >
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_below="@+id/ph"
+          android:layout_above="@+id/rl_next"
+          android:layout_marginTop="10dip" 
+        >
+        
+    
+    
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/data_list"
+       
+         
+          >
+          
+         <RelativeLayout 
+             android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+             android:id="@+id/img"
+             android:layout_centerHorizontal="true"
+             >
+              <ImageView
+        
+        android:id="@+id/topAddImageView"
+        android:layout_width="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="141dp"
+       android:src="@drawable/background"
+       android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+             
+         </RelativeLayout>
+         <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/one"
+                   android:layout_below="@+id/img"
+                   android:layout_marginTop="10dp"
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="First Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+         <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/one"
+                   android:id="@+id/two"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Last Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+         <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/two"
+                   android:id="@+id/three"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Nick Name"
+                        android:maxLength="15"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+         <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/three"
+                   android:id="@+id/four"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Phone"
+                       android:maxLength="15"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+          <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/four"
+                   android:id="@+id/five"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/mission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Mission"
+                       android:maxLength="15"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+         
+         
+         
+     </RelativeLayout>
+     
+    
+     </RelativeLayout>
+   </ScrollView>
+   
+     
+
+</RelativeLayout>

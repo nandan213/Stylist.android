@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title_bar_shape_drawable" >
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginLeft="@dimen/titlebar_left_button_margin_left"
+            android:layout_marginRight="@dimen/titlebar_left_button_margin_right"
+            android:layout_marginTop="@dimen/margin_general"
+            android:background="@drawable/smallicon"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/addAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginLeft="@dimen/titlebar_left_button_margin_left"
+            android:layout_marginRight="70dip"
+            android:layout_marginTop="@dimen/margin_general"
+            android:background="@drawable/plus"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginLeft="@dimen/titlebar_left_button_margin_left"
+            android:layout_marginRight="@dimen/margin_general"
+            android:layout_marginTop="@dimen/margin_general"
+            android:background="@drawable/profilesmall"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/title_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_textsize"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

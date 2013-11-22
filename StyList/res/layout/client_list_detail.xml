@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/clientdetailAddClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/profilesmall" />
+
+    <LinearLayout
+        android:id="@+id/clientDetailLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clientdetailAddClient"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/clientNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jack forest" />
+
+        <TextView
+            android:id="@+id/clientcancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#0101DF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clientwalkinLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clientDetailLinear"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/clientWalkingdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W" />
+
+        <TextView
+            android:id="@+id/clientWalkingeditStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="Walk In" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cleintDetailEditDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clientwalkinLinear"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textColor="#FFBF00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clientDetailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Ready"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Note:"
+            android:textColor="#FFBF00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clientDetailNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="This is sample note"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Adult:"
+            android:textColor="#FFBF00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clientDetailAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Child:"
+            android:textColor="#FFBF00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clientDetailChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="0"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientDetailClose"
+        android:layout_alignParentBottom="true"
+        android:text="Close"
+        />
+    
+    
+</RelativeLayout>

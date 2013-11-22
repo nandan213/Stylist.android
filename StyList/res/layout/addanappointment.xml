@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    tools:context=".LoginActivity" >
+    
+
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:text="@string/calender_edit"
+        android:textColor="@color/text_orange"
+        android:textSize="20sp"
+        android:textStyle="normal" >
+    </TextView>
+    
+     <TextView
+         android:layout_below="@+id/ph"
+        android:id="@+id/lh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+       
+        android:text="Add a walk in to your Scehdule list.\nEnter the customer firstname and lastname or leave the field blank to create the walk in"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="normal" >
+    </TextView>
+    
+      <RelativeLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_save"
+            android:background="@drawable/button_contact"
+            android:layout_alignParentBottom="true"
+            >
+        
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calender_save"
+        android:textSize="20sp"
+        android:id="@+id/ph"
+        android:textStyle="bold"
+         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_white"
+       android:layout_centerVertical="true"
+        ></TextView>
+    </RelativeLayout>
+    
+       <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/lh"
+        android:layout_above="@+id/edit_save"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:overScrollMode="never" >
+    
+      <RelativeLayout
+        android:layout_below="@+id/lh"
+        android:layout_above="@+id/edit_save"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+          
+          <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/one"
+                   android:layout_below="@+id/img"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="First Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+           <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/one"
+                   android:id="@+id/two"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Last Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:id="@+id/rl_one"
+                android:layout_below="@+id/two"
+                 android:layout_centerHorizontal="true"
+                  android:layout_marginTop="5dp"
+                   android:background="@color/text_white"
+                >
+                    <RelativeLayout
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/calender_adult"
+                    android:textColor="@color/black_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/counter_adult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tt"
+                    android:text="1"
+                    android:focusable="false"
+                    android:ems="3" />
+
+                <Button
+                    android:id="@+id/adult_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/counter_adult"
+                    android:background="@drawable/minus" />
+
+                <Button
+                    android:id="@+id/adult_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/adult_minus"
+                    android:background="@drawable/plus" />
+            </RelativeLayout>
+            
+                     <RelativeLayout 
+                 android:id="@+id/Layout_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/three"
+                 >
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:background="#000000" />
+
+                  
+                  
+              </RelativeLayout>
+              
+                  <RelativeLayout
+                android:id="@+id/four"
+                android:layout_below="@+id/Layout_view1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" >
+                      
+                     <TextView
+                    android:id="@+id/tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/calender_child"
+                    android:textColor="@color/black_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/counter_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tt"
+                     android:focusable="false"
+                     android:text="0"
+                    android:ems="3" />  
+                    
+                 <Button
+                    android:id="@+id/child_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/counter_child"
+                    android:background="@drawable/minus" />
+
+                <Button
+                    android:id="@+id/child_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/child_minus"
+                    android:background="@drawable/plus" />
+                      
+                  </RelativeLayout> 
+                  
+                  
+            
+            </RelativeLayout>
+            
+             <RelativeLayout 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_one"
+                    android:id="@+id/note"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/description"
+                    >
+                          <EditText
+                        android:id="@+id/createnew_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="#00000000"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:singleLine="false"
+                        android:imeOptions="actionDone"
+                        android:lines="3"
+                        android:hint="Note"
+                        android:textSize="14dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollHorizontally="true"
+                         android:scrollbars="vertical" 
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:minLines="2"
+                        android:maxLines="2" />
+
+                       </RelativeLayout>
+                       
+              <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/time"
+                   android:layout_below="@+id/note"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/scheduletime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                        android:focusable="false"
+                       android:hint="Schedule"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            
+           
+      </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_edit"
+        android:textColor="@color/text_orange"
+        android:textSize="20sp"
+        android:textStyle="normal" >
+    </TextView>
+    
+    <TextView
+         android:layout_below="@+id/ph"
+        android:id="@+id/lh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add a new profile photo for your wall"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="normal" >
+    </TextView>
+    
+   
+    
+    <RelativeLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_save"
+            android:background="@drawable/button_contact"
+            android:layout_alignParentBottom="true"
+            
+            
+            >
+        
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_edit_save"
+        android:textSize="20sp"
+        android:id="@+id/ph"
+        android:textStyle="bold"
+         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_white"
+       android:layout_centerVertical="true"
+        ></TextView>
+    </RelativeLayout>
+    
+     <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/lh"
+        android:layout_above="@+id/edit_save"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:overScrollMode="never" >
+            
+
+    <RelativeLayout
+        android:layout_below="@+id/lh"
+        android:layout_above="@+id/edit_save"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+
+        
+        
+        <RelativeLayout
+            android:id="@+id/data_list"
+            android:layout_width="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" >
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/p_img"
+                >
+                 <ImageView
+         
+        android:id="@+id/edit_profilepic"
+        android:layout_width="85dp"
+        android:layout_height="61dp"
+       android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/userpicsmall" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/p_img"
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                >
+                 <TextView
+        
+        android:id="@+id/dumm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="10dp"
+        android:text="Edit your name and phone number"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="normal" >
+    </TextView>
+                 
+            </RelativeLayout>
+            
+             <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/one"
+                   android:layout_below="@+id/img"
+                   android:layout_marginTop="10dp"
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="First Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+              <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/one"
+                   android:id="@+id/two"
+                   
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Last Name"
+                        android:maxLength="30"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+              <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/two"
+                   android:id="@+id/three"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Nick Name"
+                        android:maxLength="15"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                 <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/three"
+                   android:id="@+id/four"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Phone"
+                       android:maxLength="15"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+                  <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/four"
+                   android:id="@+id/five"
+                  
+                    android:background="@drawable/ques_textfield_visible" >
+
+                    <EditText
+                        android:id="@+id/mission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:ems="16"
+                       android:hint="Mission"
+                       android:maxLength="15"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                
+                  <RelativeLayout 
+                      android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@+id/five"
+                   android:id="@+id/six"
+                    
+                      >
+                      
+                      
+                  </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+   
+
+</RelativeLayout>

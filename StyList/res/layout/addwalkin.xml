@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blackbg" >
+
+    <LinearLayout
+        android:id="@+id/walkinMainLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/walkinHaderTExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddWalkIn"
+            android:textColor="#FE9A2E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/walkinLinearID"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/walkinMainLinear"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/walkinTextDescriptive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/walkingDescriptive"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/walkingfirstname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/walkinglastname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name" />
+
+        <RelativeLayout
+            android:id="@+id/walkinRealtiveID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/border_shape_rectangle_settings" >
+
+            <RelativeLayout
+                android:id="@+id/walkinadultRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/waliknAdultText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="Adult:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dip"
+                    android:layout_toRightOf="@id/waliknAdultText"
+                    android:text="1"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/walkingsubtractAdult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dip"
+                    android:gravity="left"
+                    android:background="@drawable/minus" >
+                </Button>
+
+                <Button
+                    android:id="@+id/walkingaddAdult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                  android:background="@drawable/plus"
+                    android:textColor="#000000" >
+                </Button>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/walkinadultRelative"
+                android:background="@drawable/seprater" />
+
+            <RelativeLayout
+                android:id="@+id/walkinChildRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/walkinadultRelative" >
+
+                <TextView
+                    android:id="@+id/walkinChildId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="Child:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dip"
+                    android:layout_toRightOf="@id/walkinChildId"
+                    android:text="1"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/walkingsubtractChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dip"
+                    android:gravity="left"
+                    android:background="@drawable/minus"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/walkingaddchild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                   android:background="@drawable/plus"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/walkinNoteHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dip"
+            android:layout_marginTop="30dip"
+            android:gravity="center_horizontal"
+            android:text="Add a Note"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/walkinNoteEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50dip"
+            android:layout_marginTop="5dip"
+            android:gravity="start"
+            android:hint="Note"
+            android:text="udohvoudisfhforifvhreuiorguaierost;gi;hstuiseudtutugturtuitughtugtughtuhtughutsgtugvheruiovghdfoiuvhdfouvhdfouvhadfuovhdafsuovhasuofvhadfjvhdafjkvhdfjvhdfjkav" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/walkinCreateButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Create Walk In" />
+
+</RelativeLayout>

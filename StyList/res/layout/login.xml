@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/topAddImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/data_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topAddImageView"
+        android:layout_margin="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ems="4"
+                android:text="@string/login_email"
+                android:textColor="@color/text_white"
+                android:textSize="15dp" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/email_txt"
+                android:background="@drawable/ques_textfield_visible" >
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="#00000000"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ems="4"
+                android:text="@string/login_passwd"
+                android:textColor="@color/text_white"
+                android:textSize="15dp" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/email_txt"
+                android:background="@drawable/ques_textfield_visible" >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="#00000000"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_contact" >
+
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/login_signin"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+       <!--  <RelativeLayout
+            android:id="@+id/rl_creaAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_signin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_contact" >
+
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/createnew"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>

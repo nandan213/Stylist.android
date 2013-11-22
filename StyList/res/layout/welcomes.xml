@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/data_list"
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/sk_complaint_img_frame" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:paddingTop="100dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_list"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login_txt"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/rl_loginin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_contact"
+            android:text="@string/Login"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_loginin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/createnew_txt"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_createnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_contact" >
+
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/createnew"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
